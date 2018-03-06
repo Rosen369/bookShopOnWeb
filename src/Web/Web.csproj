@@ -5,11 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\ts\module.ts" />
+    <Content Remove="wwwroot\ts\site.ts" />
+    <Content Remove="wwwroot\ts\viewModel.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jquery.TypeScript.DefinitelyTyped" Version="3.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\ts\module.ts" />
+    <TypeScriptCompile Include="wwwroot\ts\site.ts" />
+    <TypeScriptCompile Include="wwwroot\ts\viewModel.ts" />
   </ItemGroup>
 
 </Project>
