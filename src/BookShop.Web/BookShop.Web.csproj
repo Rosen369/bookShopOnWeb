@@ -23,8 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BookShop.Contract\BookShop.Contract.csproj" />
     <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.csproj" />
-    <ProjectReference Include="..\BookShop.Service\BookShop.Service.csproj" />
+    <ProjectReference Include="..\BookShop.Infrastructure\BookShop.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

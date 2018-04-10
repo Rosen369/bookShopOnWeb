@@ -6,7 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookShop.Contract\BookShop.Contract.csproj" />
-    <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.csproj" />
+    <ProjectReference Include="..\BookShop.Repository\BookShop.Repository.csproj" />
+    <ProjectReference Include="..\BookShop.Service\BookShop.Service.csproj" />
   </ItemGroup>
 
 </Project>
