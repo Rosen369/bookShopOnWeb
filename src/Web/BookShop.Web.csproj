@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+    <AssemblyName>BookShop.Web</AssemblyName>
+    <RootNamespace>BookShop.Web</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +20,11 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.csproj" />
+    <ProjectReference Include="..\BookShop.Service\BookShop.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

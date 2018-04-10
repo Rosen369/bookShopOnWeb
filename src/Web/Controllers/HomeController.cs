@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Web.Models;
+using BookShop.Web.Models;
 
-namespace Web.Controllers
+namespace BookShop.Web.Controllers
 {
     public class HomeController : Controller
     {
