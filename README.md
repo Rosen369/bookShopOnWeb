@@ -1,2 +1,2 @@
 # bookShopOnWeb
-Sample ASP.NET Core application using knockout and typescript
+Sample ASP.NET Core application base on domain driver design
