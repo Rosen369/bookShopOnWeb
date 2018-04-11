@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BookShop.Repository
 {
-    class BookRepository : IBookRepository
+    public class BookRepository : IBookRepository
     {
     }
 }

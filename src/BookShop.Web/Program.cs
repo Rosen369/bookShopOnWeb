@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using BookShop.Infrastructure;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -14,6 +15,7 @@ namespace BookShop.Web
     {
         public static void Main(string[] args)
         {
+            new Initializer().Initialize();
             BuildWebHost(args).Run();
         }
 
