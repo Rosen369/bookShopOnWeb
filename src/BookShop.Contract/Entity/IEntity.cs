@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Domain
+namespace BookShop.Contract.Entity
 {
-    interface IEntity<IdentityType>
+    public interface IEntity<IdentityType>
     {
         IdentityType Id { get; }
     }
