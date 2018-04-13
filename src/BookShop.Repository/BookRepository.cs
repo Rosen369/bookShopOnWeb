@@ -1,46 +1,15 @@
-﻿using BookShop.Contract.Repository;
-using BookShop.Domain.Entity;
+﻿using BookShop.Domain.Entities;
+using BookShop.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BookShop.Repository
 {
-    public class BookRepository : IBookRepository, IRepository<Book, long>
+    public class BookRepository : EfRepository<Book>, IBookRepository
     {
-        public void Add(Book entity)
+        public BookRepository(BookShopContext dbContext) : base(dbContext)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Delete(long identity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Book> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Book GetById(long identity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Book> GetByName(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Book GetFirstOrDefault()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Book entity)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -1,14 +1,11 @@
-﻿using BookShop.Contract.Entity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Domain.Entity
+namespace BookShop.Domain.Entities
 {
-    public class Book : IEntity<long>
+    public class Book : Entity
     {
-        public long Id { get; set; }
-
         public string Name { get; set; }
 
         public int Price { get; set; }

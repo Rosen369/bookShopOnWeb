@@ -1,11 +1,11 @@
 ﻿using BookShop.Contract;
-using BookShop.Contract.Repository;
-using BookShop.Contract.Service;
 using BookShop.Service;
 using BookShop.Repository;
 using CommonServiceLocator;
 using System;
 using Unity;
+using BookShop.Repository.Interfaces;
+using BookShop.Contract.Services;
 
 namespace BookShop.Infrastructure
 {

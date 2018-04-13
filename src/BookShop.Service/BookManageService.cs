@@ -1,4 +1,4 @@
-﻿using BookShop.Contract.Service;
+﻿using BookShop.Contract.Services;
 using System;
 
 namespace BookShop.Service

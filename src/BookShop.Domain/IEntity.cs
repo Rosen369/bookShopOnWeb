@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Contract.Service
+namespace BookShop.Domain
 {
-    public interface IBookManageService
+    public interface IEntity
     {
+        int Id { get; }
     }
 }
