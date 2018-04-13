@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Web", "BookShop.Web\BookShop.Web.csproj", "{9F1D6F68-0430-4FE0-A74E-F94CD93D08B5}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain", "BookShop.Domain\BookShop.Domain.csproj", "{BE2E6CC9-C722-45D8-AD28-E3F86B283B9D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Service", "BookShop.Service\BookShop.Service.csproj", "{78439669-F946-4508-88A8-6243CE819F98}"
@@ -15,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Infrastructure", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Repository", "BookShop.Repository\BookShop.Repository.csproj", "{2ED089DE-8F15-4639-B5E7-51017BD24832}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop.UnitTest", "BookShop.UnitTest\BookShop.UnitTest.csproj", "{B521F633-AD1D-4501-893F-66889BDABA53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.UnitTest", "BookShop.UnitTest\BookShop.UnitTest.csproj", "{B521F633-AD1D-4501-893F-66889BDABA53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop.Web", "BookShop.Web\BookShop.Web.csproj", "{2A4234DF-FA76-411B-BDCA-DA1DEF0ABA61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9F1D6F68-0430-4FE0-A74E-F94CD93D08B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F1D6F68-0430-4FE0-A74E-F94CD93D08B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F1D6F68-0430-4FE0-A74E-F94CD93D08B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F1D6F68-0430-4FE0-A74E-F94CD93D08B5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE2E6CC9-C722-45D8-AD28-E3F86B283B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE2E6CC9-C722-45D8-AD28-E3F86B283B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE2E6CC9-C722-45D8-AD28-E3F86B283B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{B521F633-AD1D-4501-893F-66889BDABA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B521F633-AD1D-4501-893F-66889BDABA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B521F633-AD1D-4501-893F-66889BDABA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A4234DF-FA76-411B-BDCA-DA1DEF0ABA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4234DF-FA76-411B-BDCA-DA1DEF0ABA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4234DF-FA76-411B-BDCA-DA1DEF0ABA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4234DF-FA76-411B-BDCA-DA1DEF0ABA61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
