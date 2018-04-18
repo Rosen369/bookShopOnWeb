@@ -8,6 +8,9 @@ using BookShop.Repository.Interfaces;
 using BookShop.Contract.Services;
 using System.IO;
 using Unity.Lifetime;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 
 namespace BookShop.Infrastructure
 {
@@ -18,6 +21,7 @@ namespace BookShop.Infrastructure
         public void Initialize()
         {
             this.RegisterContainer();
+            this.RegisterConfiguration();
             this.RegisterLogger();
             this.RegisterRepository();
             this.RegisterService();
@@ -25,10 +29,18 @@ namespace BookShop.Infrastructure
 
         private void RegisterContainer()
         {
-            var uc = ServiceRegister.UnityContainer;
-            uc.RegisterType<IServiceRegister, ServiceRegister>();
+            var uc = new UnityContainer();
             uc.RegisterInstance<IUnityContainer>(uc);
             ServiceLocator.SetLocatorProvider(() => new Unity.ServiceLocation.UnityServiceLocator(uc));
+        }
+
+        private void RegisterConfiguration()
+        {
+            var config = new ConfigurationBuilder()
+                .Add(new JsonConfigurationSource { Path = "appsettings.json", ReloadOnChange = true })
+                .Build();
+            var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
+            container.RegisterInstance<IConfiguration>(config);
         }
 
         private void RegisterLogger()
@@ -42,14 +54,17 @@ namespace BookShop.Infrastructure
 
         private void RegisterRepository()
         {
-            var register = ServiceLocator.Current.GetInstance<IServiceRegister>();
-            register.Register<IBookRepository, BookRepository>();
+            var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
+            var config = container.Resolve<IConfiguration>();
+            var connectionString = config["ConnectionStrings:DefaultConnection"];
+            container.RegisterType<BookShopContext>(connectionString);
+            container.RegisterType<IBookRepository, BookRepository>();
         }
 
         private void RegisterService()
         {
-            var register = ServiceLocator.Current.GetInstance<IServiceRegister>();
-            register.Register<IBookManageService, BookManageService>();
+            var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
+            container.RegisterType<IBookManageService, BookManageService>();
         }
     }
 }

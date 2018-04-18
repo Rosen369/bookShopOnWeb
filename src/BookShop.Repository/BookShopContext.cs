@@ -7,6 +7,10 @@ namespace BookShop.Repository
 {
     public class BookShopContext : DbContext
     {
+        public BookShopContext(string connectionString) : this(new DbContextOptionsBuilder<BookShopContext>().UseSqlServer(connectionString: connectionString).Options)
+        {
+        }
+
         public BookShopContext(DbContextOptions<BookShopContext> options) : base(options)
         {
         }
