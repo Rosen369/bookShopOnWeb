@@ -1,4 +1,4 @@
-﻿using BookShop.Contract;
+﻿using BookShop.Abstractions;
 using log4net;
 using System;
 using System.Collections.Generic;

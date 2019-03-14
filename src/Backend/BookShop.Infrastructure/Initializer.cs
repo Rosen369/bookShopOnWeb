@@ -1,11 +1,11 @@
-﻿using BookShop.Contract;
+﻿using BookShop.Abstractions;
 using BookShop.Service;
 using BookShop.Repository;
 using CommonServiceLocator;
 using System;
 using Unity;
 using BookShop.Repository.Interfaces;
-using BookShop.Contract.Services;
+using BookShop.Abstractions.Services;
 using System.IO;
 using Unity.Lifetime;
 using Microsoft.EntityFrameworkCore;

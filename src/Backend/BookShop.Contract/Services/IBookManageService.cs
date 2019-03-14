@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Contract.Services
+namespace BookShop.Abstractions.Services
 {
     public interface IBookManageService
     {
