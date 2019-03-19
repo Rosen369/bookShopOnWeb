@@ -4,7 +4,7 @@ using Unity;
 using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
-using BookShop.Applicatoin.Abstraction;
+using BookShop.Application.Abstraction;
 using Unity.Lifetime;
 using BookShop.Domain.Repository;
 using BookShop.Domain.Abstraction.Repository;

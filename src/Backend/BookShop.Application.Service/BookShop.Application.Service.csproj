@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookShop.Contract\BookShop.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\BookShop.Application.Abstraction\BookShop.Application.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>

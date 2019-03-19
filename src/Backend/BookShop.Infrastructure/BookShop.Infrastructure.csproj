@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BookShop.Application.Abstraction\BookShop.Application.Abstraction.csproj" />
     <ProjectReference Include="..\BookShop.Application.Service\BookShop.Application.Service.csproj" />
-    <ProjectReference Include="..\BookShop.Contract\BookShop.Application.Abstraction.csproj" />
-    <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.Abstraction.csproj" />
-    <ProjectReference Include="..\BookShop.Repository\BookShop.Domain.Repository.csproj" />
-    <ProjectReference Include="..\BookShop.Service\BookShop.Domain.Service.csproj" />
+    <ProjectReference Include="..\BookShop.Domain.Abstraction\BookShop.Domain.Abstraction.csproj" />
+    <ProjectReference Include="..\BookShop.Domain.Repository\BookShop.Domain.Repository.csproj" />
+    <ProjectReference Include="..\BookShop.Domain.Service\BookShop.Domain.Service.csproj" />
   </ItemGroup>
 
 </Project>

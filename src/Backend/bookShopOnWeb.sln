@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain.Abstraction", "BookShop.Domain\BookShop.Domain.Abstraction.csproj", "{BE2E6CC9-C722-45D8-AD28-E3F86B283B9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain.Abstraction", "BookShop.Domain.Abstraction\BookShop.Domain.Abstraction.csproj", "{BE2E6CC9-C722-45D8-AD28-E3F86B283B9D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain.Service", "BookShop.Service\BookShop.Domain.Service.csproj", "{78439669-F946-4508-88A8-6243CE819F98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain.Service", "BookShop.Domain.Service\BookShop.Domain.Service.csproj", "{78439669-F946-4508-88A8-6243CE819F98}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Application.Abstraction", "BookShop.Contract\BookShop.Application.Abstraction.csproj", "{58BBC18B-E3CA-4009-99BD-57523944C37A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Application.Abstraction", "BookShop.Application.Abstraction\BookShop.Application.Abstraction.csproj", "{58BBC18B-E3CA-4009-99BD-57523944C37A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Infrastructure", "BookShop.Infrastructure\BookShop.Infrastructure.csproj", "{E8254890-9215-4E5C-8D3F-DFFA2B5D669B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain.Repository", "BookShop.Repository\BookShop.Domain.Repository.csproj", "{2ED089DE-8F15-4639-B5E7-51017BD24832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain.Repository", "BookShop.Domain.Repository\BookShop.Domain.Repository.csproj", "{2ED089DE-8F15-4639-B5E7-51017BD24832}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.UnitTest", "BookShop.UnitTest\BookShop.UnitTest.csproj", "{B521F633-AD1D-4501-893F-66889BDABA53}"
 EndProject
