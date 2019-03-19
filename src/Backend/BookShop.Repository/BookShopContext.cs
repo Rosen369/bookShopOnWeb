@@ -1,9 +1,9 @@
-﻿using BookShop.Domain.Entities;
+﻿using BookShop.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 
-namespace BookShop.Repository
+namespace BookShop.Domain.Repository
 {
     public class BookShopContext : DbContext
     {

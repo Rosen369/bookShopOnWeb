@@ -1,16 +1,17 @@
-﻿using BookShop.Abstractions;
-using BookShop.Service;
-using BookShop.Repository;
-using CommonServiceLocator;
+﻿using CommonServiceLocator;
 using System;
 using Unity;
-using BookShop.Repository.Interfaces;
-using BookShop.Abstractions.Services;
 using System.IO;
-using Unity.Lifetime;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
+using BookShop.Applicatoin.Abstraction;
+using Unity.Lifetime;
+using BookShop.Domain.Repository;
+using BookShop.Domain.Abstraction.Repository;
+using BookShop.Domain.Abstraction.Service;
+using BookShop.Domain.Service;
+using BookShop.Application.Abstraction.Service;
+using BookShop.Application.Service;
 
 namespace BookShop.Infrastructure
 {
@@ -24,14 +25,15 @@ namespace BookShop.Infrastructure
             this.RegisterConfiguration();
             this.RegisterLogger();
             this.RegisterRepository();
-            this.RegisterService();
+            this.RegisterDomainService();
+            this.RegisterApplicationService();
         }
 
         private void RegisterContainer()
         {
             var uc = new UnityContainer();
             uc.RegisterInstance<IUnityContainer>(uc);
-            ServiceLocator.SetLocatorProvider(() => new Unity.ServiceLocation.UnityServiceLocator(uc));
+            ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(uc));
         }
 
         private void RegisterConfiguration()
@@ -61,7 +63,13 @@ namespace BookShop.Infrastructure
             container.RegisterType<IBookRepository, BookRepository>();
         }
 
-        private void RegisterService()
+        private void RegisterDomainService()
+        {
+            var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
+            container.RegisterType<IBookService, BookService>();
+        }
+
+        private void RegisterApplicationService()
         {
             var container = ServiceLocator.Current.GetInstance<IUnityContainer>();
             container.RegisterType<IBookManageService, BookManageService>();

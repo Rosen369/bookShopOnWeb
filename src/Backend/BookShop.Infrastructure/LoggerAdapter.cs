@@ -1,4 +1,4 @@
-﻿using BookShop.Abstractions;
+﻿using BookShop.Applicatoin.Abstraction;
 using log4net;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Text;
 
 namespace BookShop.Infrastructure
 {
-    public class LoggerAdapter<T> : IAppLogger<T>
+    internal class LoggerAdapter<T> : IAppLogger<T>
     {
         private readonly ILog _logger;
 

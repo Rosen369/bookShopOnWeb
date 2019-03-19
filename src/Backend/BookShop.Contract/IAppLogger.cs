@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Abstractions
+namespace BookShop.Applicatoin.Abstraction
 {
     public interface IAppLogger<T>
     {

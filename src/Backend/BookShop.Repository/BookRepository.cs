@@ -1,10 +1,10 @@
-﻿using BookShop.Domain.Entities;
-using BookShop.Repository.Interfaces;
+﻿using BookShop.Domain.Abstraction.Repository;
+using BookShop.Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Repository
+namespace BookShop.Domain.Repository
 {
     public class BookRepository : EfRepository<Book>, IBookRepository
     {

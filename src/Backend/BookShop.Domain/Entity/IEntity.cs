@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Domain
+namespace BookShop.Domain.Entity
 {
     public interface IEntity
     {

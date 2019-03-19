@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookShop.Contract\BookShop.Abstractions.csproj" />
-    <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.csproj" />
+    <ProjectReference Include="..\BookShop.Contract\BookShop.Application.Abstraction.csproj" />
     <ProjectReference Include="..\BookShop.Infrastructure\BookShop.Infrastructure.csproj" />
   </ItemGroup>
 

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Domain
+namespace BookShop.Domain.Entity
 {
-    public class Entity : IEntity
+    public class EntityBase : IEntity
     {
         public int Id { get; set; }
     }

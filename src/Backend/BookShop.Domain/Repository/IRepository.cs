@@ -1,9 +1,9 @@
-﻿using BookShop.Domain;
+﻿using BookShop.Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BookShop.Repository.Interfaces
+namespace BookShop.Domain.Abstraction.Repository
 {
     public interface IRepository<TEntity> where TEntity : IEntity
     {

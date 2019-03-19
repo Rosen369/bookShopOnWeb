@@ -5,17 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommonServiceLocator" Version="2.0.3" />
+    <PackageReference Include="CommonServiceLocator" Version="2.0.4" />
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.1" />
-    <PackageReference Include="Unity" Version="5.8.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Unity" Version="5.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookShop.Contract\BookShop.Abstractions.csproj" />
-    <ProjectReference Include="..\BookShop.Repository\BookShop.Repository.csproj" />
-    <ProjectReference Include="..\BookShop.Service\BookShop.Service.csproj" />
+    <ProjectReference Include="..\BookShop.Application.Service\BookShop.Application.Service.csproj" />
+    <ProjectReference Include="..\BookShop.Contract\BookShop.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.Abstraction.csproj" />
+    <ProjectReference Include="..\BookShop.Repository\BookShop.Domain.Repository.csproj" />
+    <ProjectReference Include="..\BookShop.Service\BookShop.Domain.Service.csproj" />
   </ItemGroup>
 
 </Project>

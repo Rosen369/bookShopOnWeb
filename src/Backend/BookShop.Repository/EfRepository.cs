@@ -1,14 +1,14 @@
-﻿using BookShop.Domain;
-using BookShop.Repository.Interfaces;
+﻿using BookShop.Domain.Abstraction.Repository;
+using BookShop.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BookShop.Repository
+namespace BookShop.Domain.Repository
 {
-    public class EfRepository<TEntity> : IRepository<TEntity> where TEntity : Entity
+    public class EfRepository<TEntity> : IRepository<TEntity> where TEntity : EntityBase
     {
         protected readonly BookShopContext _dbContext;
 

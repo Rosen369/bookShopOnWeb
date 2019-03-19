@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookShop.Contract\BookShop.Abstractions.csproj" />
-    <ProjectReference Include="..\BookShop.Domain\BookShop.Domain.csproj" />
+    <Folder Include="DTO\" />
   </ItemGroup>
 
 </Project>
